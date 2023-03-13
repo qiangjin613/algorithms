@@ -3,7 +3,15 @@ package example.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <a href="https://leetcode.cn/problems/pascals-triangle/">118. 杨辉三角</a>
+ *
+ * @see Solution_119
+ */
 public class Solution_118 {
+    /**
+     * 从杨辉三角的性质出发：每个数字等于上一行的左右两个数字之和。
+     */
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>(numRows);
         // 填充首行数据
