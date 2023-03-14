@@ -1,7 +1,6 @@
 package example.leetcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -10,6 +9,7 @@ import java.util.List;
  * @see Solution_118
  */
 public class Solution_119 {
+
     /**
      * 由于只需要结果行，可采用<b>滚动数组</b>的思想对空间复杂度进行优化
      */
@@ -54,8 +54,6 @@ public class Solution_119 {
         }
         return current;
     }
-
-
 
     public static void main(String[] args) {
         System.out.println(new Solution_119().getRow(4));

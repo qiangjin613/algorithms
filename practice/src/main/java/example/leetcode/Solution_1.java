@@ -2,7 +2,11 @@ package example.leetcode;
 
 import java.util.HashMap;
 
+/**
+ * <a href="https://leetcode.cn/problems/two-sum/">1. 两数之和</a>
+ */
 public class Solution_1 {
+
     /**
      * 暴力扫描
      */
