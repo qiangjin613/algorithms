@@ -91,12 +91,51 @@ public class Solution_169 {
         }
     }
 
+    /**
+     * 分治
+     * <p>
+     * NOTE：使用分治的前提是满足“多数”出现的频率大于总数据集的 1/2。
+     * 当这个前提不满足时，程序是有逻辑bug的，比如：[1,2,3,4,5,2,7]
+     */
+    public int majorityElement5(int[] nums) {
+        return majorityElement5(nums, 0, nums.length);
+    }
 
+    private int majorityElement5(int[] nums, int leftIndex, int rightIndex) {
+        if (leftIndex + 1 == rightIndex) {
+            return nums[leftIndex];
+        }
 
+        int mid = (rightIndex + leftIndex) / 2;
+        int leftNum = majorityElement5(nums, leftIndex, mid);
+        int rightNum = majorityElement5(nums, mid, rightIndex);
+
+        if (leftNum == rightNum) {
+            return leftNum;
+        }
+
+        int leftCount = countInRange(nums, leftNum, leftIndex, rightIndex);
+        int rightCount = countInRange(nums, rightNum, leftIndex, rightIndex);
+        return leftCount > rightCount ? leftNum : rightNum;
+    }
+
+    /**
+     * 统计在 [left, right) 的 num 的出现次数
+     */
+    private int countInRange(int[] nums, int num, int left, int right) {
+        int count = 0;
+        for (int i = left; i < right; i++) {
+            if (nums[i] == num) {
+                count++;
+            }
+        }
+        return count;
+    }
 
     public static void main(String[] args) {
         System.out.println(new Solution_169().majorityElement(new int[]{2,2,1,1,1,2,2}));
         System.out.println(new Solution_169().majorityElement3(new int[]{2,2,1,1,1,2,2}));
         System.out.println(new Solution_169().majorityElement4(new int[]{2,2,1,1,1,2,2}));
+        System.out.println(new Solution_169().majorityElement5(new int[]{1,2,3,4,5,2,7})); // output: 7  WHAT?
     }
 }
