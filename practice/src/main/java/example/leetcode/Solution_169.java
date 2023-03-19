@@ -1,7 +1,5 @@
 package example.leetcode;
 
-import com.sun.jnlp.JNLPRandomAccessFileNSBImpl;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -132,10 +130,30 @@ public class Solution_169 {
         return count;
     }
 
+    /**
+     * Boyer-Moore 投票算法
+     */
+    public int majorityElement6(int[] nums) {
+        int candidate = -1;
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (count == 0) {
+                candidate = nums[i];
+            }
+            if (candidate == nums[i]) {
+                count++;
+            } else {
+                count--;
+            }
+        }
+        return candidate;
+    }
+
     public static void main(String[] args) {
         System.out.println(new Solution_169().majorityElement(new int[]{2,2,1,1,1,2,2}));
         System.out.println(new Solution_169().majorityElement3(new int[]{2,2,1,1,1,2,2}));
         System.out.println(new Solution_169().majorityElement4(new int[]{2,2,1,1,1,2,2}));
         System.out.println(new Solution_169().majorityElement5(new int[]{1,2,3,4,5,2,7})); // output: 7  WHAT?
+        System.out.println(new Solution_169().majorityElement6(new int[]{1,3,4,2,3,7,6}));
     }
 }
