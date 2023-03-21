@@ -35,7 +35,7 @@ public class Solution_1 {
                hashTable.put(nums[i], i);
            }
         }
-        return null;
+        return new int[0];
     }
 
     public static void main(String[] args) {
