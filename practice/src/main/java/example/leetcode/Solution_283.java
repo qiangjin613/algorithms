@@ -1,7 +1,7 @@
 package example.leetcode;
 
 /**
- *
+ * <a href="https://leetcode.cn/problems/move-zeroes/">283. 移动零</a>
  */
 public class Solution_283 {
 
