@@ -1,4 +1,4 @@
-package example.leetcode;
+package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/move-zeroes/">283. 移动零</a>

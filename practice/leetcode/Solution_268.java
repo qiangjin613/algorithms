@@ -1,4 +1,4 @@
-package example.leetcode;
+package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/missing-number/">268. 丢失的数字</a>

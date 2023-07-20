@@ -1,4 +1,4 @@
-package example.leetcode;
+package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/merge-sorted-array/">88. 合并两个有序数组</a>

@@ -1,4 +1,4 @@
-package example.leetcode;
+package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/">121. 买卖股票的最佳时机</a>

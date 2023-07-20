@@ -1,4 +1,4 @@
-package example.leetcode;
+package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/remove-element/">27. 移除元素</a>
