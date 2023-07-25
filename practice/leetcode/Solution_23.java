@@ -2,7 +2,6 @@ package leetcode;
 
 import leetcode.structure.ListNode;
 
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 /**
