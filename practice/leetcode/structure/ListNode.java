@@ -1,7 +1,5 @@
 package leetcode.structure;
 
-import java.util.Arrays;
-
 public class ListNode {
 
     public int val;
@@ -33,5 +31,76 @@ public class ListNode {
             System.out.print(p.val + " ");
             p = p.next;
         }
+    }
+
+    public void print(ListNode head) {
+        if (head == null) {
+            return;
+        }
+        // 前序遍历
+        System.out.println("前序遍历" + head.val);
+        print(head.next);
+        // 后序遍历
+        System.out.println("后序遍历" + head.val);
+    }
+
+    /**
+     * 反转前 n 个节点
+     */
+    // 第 n + 1 个节点
+    ListNode successor = null;
+    public ListNode reverseN(ListNode head, int n) {
+        if (head.next == null || n == 1) {
+            successor = head.next;
+            return head;
+        }
+        ListNode last = reverseN(head.next, n - 1);
+        head.next.next = head;
+        head.next = successor;
+        return last;
+    }
+
+    /**
+     * 反转链表（迭代）
+     */
+    public ListNode reverse(ListNode head) {
+        ListNode pre, next, cur;
+        pre = null;
+        next = cur = head;
+        while (cur != null) {
+            // 以下顺序不可调换
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
+
+    /**
+     * 反转链表 a，到 b 截止
+     */
+    public ListNode reverse(ListNode a, ListNode b) {
+        ListNode pre = null, nxt = a, cur = a;
+        while (cur != b) {
+            nxt = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = nxt;
+        }
+        a.next = b;
+        return pre;
+    }
+
+
+
+    public static void main(String[] args) {
+        ListNode head = ListNode.build(1, 2, 3, 4, 5, 6);
+        new ListNode().reverseN(head, 8).print();
+
+        ListNode build = ListNode.build(1, 2, 3, 4, 5, 6);
+        new ListNode().reverse(build).print();
+
+        new ListNode().print(build(1, 2, 3, 4, 5, 6));
     }
 }
