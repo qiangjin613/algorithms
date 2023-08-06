@@ -7,6 +7,7 @@ public class Solution_283 {
 
     /**
      * 遍历
+     * <p>非零元素相对顺序没变，零元素相对顺序变了
      */
     public void moveZeroes(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
@@ -32,6 +33,7 @@ public class Solution_283 {
 
     /**
      * 双指针
+     * <p>非零元素相对顺序没变，零元素相对顺序变了
      */
     public void moveZeroes2(int[] nums) {
         int n = nums.length, slow = 0, fast = 0;
@@ -56,7 +58,10 @@ public class Solution_283 {
         // 使用不为 0 的数字向前覆盖
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
-                nums[slow++] = nums[i];
+                if (i != slow) {
+                    nums[slow] = nums[i];
+                }
+                slow++;
             }
         }
         // 将剩下的元素全部置为 0

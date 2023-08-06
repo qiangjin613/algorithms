@@ -25,6 +25,6 @@ public class Solution_26 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution_26().removeDuplicates(new int[]{1, 1, 2}));
+        System.out.println(new Solution_26().removeDuplicates(new int[]{1, 1, 2, 3, 3, 3, 5, 7, 9}));
     }
 }
