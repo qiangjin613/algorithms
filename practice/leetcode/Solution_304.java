@@ -1,7 +1,5 @@
 package leetcode;
 
-import javax.swing.*;
-
 /**
  * <a href = "https://leetcode.cn/problems/range-sum-query-2d-immutable/">304. 二维区域和检索 - 矩阵不可变</a>
  */
