@@ -6,6 +6,36 @@ import leetcode.structure.ListNode;
 <a href = "https://leetcode.cn/problems/merge-two-sorted-lists/">21. 合并两个有序链表</a>
  */
 public class Solution_21 {
+
+    /**
+     * 使用 list1、list2 充当遍历两个链表的双指针
+     */
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        // 表头节点
+        ListNode dummy = new ListNode(), p = dummy;
+
+        // 合并链表
+        while (list1 != null && list2 != null) {
+            if (list1.val > list2.val) {
+                p.next = list2;
+                list2 = list2.next;
+            } else {
+                p.next = list1;
+                list1 = list1.next;
+            }
+            p = p.next;
+        }
+
+        if (list1 != null) {
+            p.next = list1;
+        }
+        if (list2 != null) {
+            p.next = list2;
+        }
+
+        return dummy.next;
+    }
+
     public static void main(String[] args) {
         ListNode list1 = new ListNode(2), p1 = list1;
         ListNode list2 = new ListNode(3), p2 = list2;
@@ -25,30 +55,5 @@ public class Solution_21 {
             System.out.println(listNode.val);
             listNode = listNode.next;
         }
-    }
-
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        // 表头节点
-        ListNode dummy = new ListNode(-1), p = dummy;
-        // 定义双指针
-        ListNode p1 = list1, p2 = list2;
-        // 合并链表
-        while (p1 != null && p2 != null) {
-            if (p1.val <= p2.val) {
-                p.next = p1;
-                p1 = p1.next;
-            } else {
-                p.next = p2;
-                p2 = p2.next;
-            }
-            p = p.next;
-        }
-        if (p1 != null) {
-            p.next = p1;
-        }
-        if (p2 != null) {
-            p.next = p2;
-        }
-        return dummy.next;
     }
 }

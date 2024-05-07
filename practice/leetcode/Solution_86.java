@@ -15,7 +15,7 @@ public class Solution_86 {
             p.next = new ListNode(integer);
             p = p.next;
         }
-        new Solution_86().partition(head, 3).print();
+        new Solution_86().partition2(head, 3).print();
     }
 
     /**
@@ -42,5 +42,30 @@ public class Solution_86 {
         }
         p1.next = list2.next;
         return list1.next;
+    }
+
+    /**
+     * 如果不给 head 一个工作指针，对其处理要更繁琐一点（相比于 partition）
+     */
+    public ListNode partition2(ListNode head, int x) {
+        // dummy1 < x < dummy2
+        ListNode dummy1 = new ListNode(), dummy2 = new ListNode();
+        ListNode p1 = dummy1, p2 = dummy2;
+        while (head != null) {
+            if (head.val < x) {
+                p1.next = head;
+                p1 = p1.next;
+                head = head.next;
+                p1.next = null;
+            } else {
+                p2.next = head;
+                p2 = p2.next;
+                head = head.next;
+                p2.next = null;
+            }
+        }
+
+        p1.next = dummy2.next;
+        return dummy1.next;
     }
 }

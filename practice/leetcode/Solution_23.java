@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
 public class Solution_23 {
     public static void main(String[] args) {
         ListNode[] lists = new ListNode[] {ListNode.build(1,4,5), ListNode.build(1,3,4), ListNode.build(2,6)};
-        new Solution_23().mergeKLists(lists).print();
+        new Solution_23().mergeKLists2(lists).print();
     }
 
     public ListNode mergeKLists(ListNode[] lists) {
@@ -32,5 +32,29 @@ public class Solution_23 {
             p = p.next;
         }
         return mergedList.next;
+    }
+
+    public ListNode mergeKLists2(ListNode[] lists) {
+        if (lists.length == 0) {
+            return null;
+        }
+
+        ListNode dummy = new ListNode(), p = dummy;
+        PriorityQueue<ListNode> pQueue = new PriorityQueue<>(lists.length, (a, b) -> a.val - b.val);
+        for (ListNode list : lists) {
+            if (list != null) {
+                pQueue.add(list);
+            }
+        }
+        while (!pQueue.isEmpty()) {
+            ListNode temp = pQueue.poll();
+            p.next = temp;
+            p = p.next;
+            if (temp.next != null) {
+                pQueue.add(temp.next);
+            }
+        }
+
+        return dummy.next;
     }
 }
