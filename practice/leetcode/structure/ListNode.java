@@ -1,5 +1,7 @@
 package leetcode.structure;
 
+import java.util.Objects;
+
 public class ListNode {
 
     public int val;
@@ -92,7 +94,18 @@ public class ListNode {
         return pre;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ListNode listNode = (ListNode) o;
+        return val == listNode.val && Objects.equals(next, listNode.next) && Objects.equals(successor, listNode.successor);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(val, next, successor);
+    }
 
     public static void main(String[] args) {
         ListNode head = ListNode.build(1, 2, 3, 4, 5, 6);
