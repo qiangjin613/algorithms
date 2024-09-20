@@ -7,6 +7,7 @@ import java.util.List;
  * <a href="https://leetcode.cn/problems/pascals-triangle/">118. 杨辉三角</a>
  *
  * @see Solution_119
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_118 {
 

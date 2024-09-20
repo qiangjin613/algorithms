@@ -7,6 +7,8 @@ import java.util.Set;
 
 /**
  * <a href="https://leetcode.cn/problems/single-number/">136. 只出现一次的数字</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_136 {
 

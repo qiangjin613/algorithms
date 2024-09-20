@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * <a href = "https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/">167. 两数之和 II - 输入有序数组</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_167 {
 

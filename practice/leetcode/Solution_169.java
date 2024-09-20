@@ -7,6 +7,8 @@ import java.util.Random;
 
 /**
  * <a href="https://leetcode.cn/problems/majority-element/">169. 多数元素</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_169 {
 

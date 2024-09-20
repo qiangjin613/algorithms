@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * <a href = "https://leetcode.cn/problems/reverse-words-in-a-string/">151. 反转字符串中的单词</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_151 {
 

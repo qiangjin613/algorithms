@@ -6,6 +6,8 @@ import java.util.Map;
 
 /**
  * <a href="https://leetcode.cn/problems/contains-duplicate/">217. 存在重复元素</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_217 {
 

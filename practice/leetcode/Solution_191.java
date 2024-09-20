@@ -3,7 +3,7 @@ package leetcode;
 /**
  * <a href="https://leetcode.cn/problems/number-of-1-bits/">191. 位1的个数</a>
  *
- * @author <a href="mailto:qiangjin613@163.com">191. 位1的个数</a>
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_191 {
 

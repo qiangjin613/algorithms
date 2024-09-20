@@ -4,6 +4,8 @@ import leetcode.structure.ListNode;
 
 /**
  * <a href = "https://leetcode.cn/problems/intersection-of-two-linked-lists/">160. 相交链表</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_160 {
     public static void main(String[] args) {

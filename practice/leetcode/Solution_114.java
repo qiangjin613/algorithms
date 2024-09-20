@@ -4,6 +4,8 @@ import leetcode.structure.TreeNode;
 
 /**
  * <a href="https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/">114. 二叉树展开为链表</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_114 {
 
