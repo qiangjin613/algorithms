@@ -25,7 +25,7 @@ public class Solution_205 {
         /**
          * 双向映射关系
          * <p>
-         * Note: 最好的解决办法是建立两个 Map 解决，如果是单个 Map 采用比较前交换元素顺序的方式是走不通的
+         * Note: 最好的解决办法是建立两个 Map 解决，如果是单个 Map 就判断就比较麻烦，且容易出错
          */
     public boolean isIsomorphic(String s, String t) {
         if (s.length() != t.length()) {
