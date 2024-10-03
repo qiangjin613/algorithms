@@ -1,8 +1,5 @@
 package leetcode;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * <a href="https://leetcode.cn/problems/first-unique-character-in-a-string/">387. 字符串中的第一个唯一字符</a>
  *
