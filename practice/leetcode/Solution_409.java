@@ -1,7 +1,5 @@
 package leetcode;
 
-import leetcode.structure.TreeNode;
-
 /**
  * <a href="https://leetcode.cn/problems/longest-palindrome/description/">409. 最长回文串</a>
  *
