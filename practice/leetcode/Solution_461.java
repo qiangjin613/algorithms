@@ -18,7 +18,8 @@ public class Solution_461 {
      * 方法二：移位实现位计数
      */
     public int hammingDistance2(int x, int y) {
-        int z = x ^ y, res = 0;
+        int z = x ^ y;
+        int res = 0;
         while (z != 0) {
             res += z & 1;
             z >>= 1;
@@ -30,7 +31,8 @@ public class Solution_461 {
      * 方法三：Brian Kernighan 算法
      */
     public int hammingDistance3(int x, int y) {
-        int z = x ^ y, res = 0;
+        int z = x ^ y;
+        int res = 0;
         while (z != 0) {
             z &= z - 1;
             res ++;
