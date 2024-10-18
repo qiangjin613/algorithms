@@ -1,5 +1,7 @@
 /**
  * 最大公约数
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 class GCD {
 

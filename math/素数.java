@@ -4,6 +4,8 @@ import java.util.*;
  * 素数（又称“质数”）
  * 一个大于 1 的自然数，除了 1 和它自身外，不能被其他自然数整除的数叫做素数（质数）。
  * 否则称为合数（规定 1 既不是质数也不是合数）。
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 class Prime {
 
