@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * <a href = "https://leetcode.cn/problems/permutation-in-string/">567. 字符串的排列</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_567 {
 

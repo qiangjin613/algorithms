@@ -5,6 +5,8 @@ import java.util.PriorityQueue;
 
 /**
  * <a href = "https://leetcode.cn/problems/advantage-shuffle/">870. 优势洗牌</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_870 {
 

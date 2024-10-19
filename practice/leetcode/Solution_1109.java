@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * <a href = "https://leetcode.cn/problems/corporate-flight-bookings/">1109. 航班预订统计</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_1109 {
     public int[] corpFlightBookings(int[][] bookings, int n) {

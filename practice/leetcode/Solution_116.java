@@ -1,8 +1,5 @@
 package leetcode;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * <a href="https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/">116. 填充每个节点的下一个右侧节点指针</a>
  *
@@ -56,15 +53,15 @@ public class Solution_116 {
         Node connect = new Solution_116().connect(root1);
         System.out.println();
     }
-}
 
-class Node {
-    int val;
-    Node left;
-    Node right;
-    Node next;
+    static class Node {
+        int val;
+        Node left;
+        Node right;
+        Node next;
 
-    Node(int val) {
-        this.val = val;
+        Node(int val) {
+            this.val = val;
+        }
     }
 }

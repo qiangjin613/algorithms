@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/minimum-sum-of-mountain-triplets-i/description/">2908. 元素和最小的山形三元组 I</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_2908 {
 

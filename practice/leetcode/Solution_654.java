@@ -4,6 +4,8 @@ import leetcode.structure.TreeNode;
 
 /**
  * <a href="https://leetcode.cn/problems/maximum-binary-tree/">654. 最大二叉树</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_654 {
 

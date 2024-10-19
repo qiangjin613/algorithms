@@ -4,6 +4,8 @@ import java.util.*;
 
 /**
  * <a href = "https://leetcode.cn/problems/random-pick-with-blacklist/">710. 黑名单中的随机数</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_710 {
 
