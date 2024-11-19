@@ -25,6 +25,7 @@ class Prime {
         }
         return true;
     }
+
     public static boolean isPrime2(int n) {
         if (n <= 1) {
             return false;
@@ -55,7 +56,7 @@ class Prime {
             if (isPrime[i]) {
                 prime.add(i);
                 // 筛去所有 i 的倍数：
-                for (int j = i * 2; j < maxn; j+=i) {
+                for (int j = i * 2; j < maxn; j += i) {
                     isPrime[j] = false;
                 }
             }
@@ -81,6 +82,7 @@ class Prime {
             this.cnt = cnt;
         }
     }
+
     public void integerFactorization(int n) {
         System.out.print(n + " = ");
         List<Integer> primeList = findPrime(n);
