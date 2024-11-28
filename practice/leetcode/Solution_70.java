@@ -26,22 +26,15 @@ public class Solution_70 {
     }
 
     /**
-     * 也可以把 [备忘录] 传进去进行处理
+     * DP 备忘录
      */
     public int climbStairs_2(int n) {
-        int[] memo = new int[50];
-        return dp(memo, n);
-    }
-
-    private int dp(int[] memo, int n) {
-        if (n == 1 || n == 0) {
-            return 1;
+        int[] dp = new int[n + 1];
+        dp[0] = dp[1] = 1;
+        for (int i = 0; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
         }
-        if (memo[n] != 0) {
-            return memo[n];
-        }
-        memo[n] = dp(memo, n - 1) + dp(memo, n - 2);
-        return memo[n];
+        return dp[n];
     }
 
     public static void main(String[] args) {
