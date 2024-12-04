@@ -12,7 +12,7 @@ import java.util.List;
 public class Solution_118 {
 
     /**
-     * 从杨辉三角的性质出发：每个数字等于上一行的左右两个数字之和。
+     * 从杨辉三角的性质出发：每个数字等于上一行的左右两个数字之和
      */
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>(numRows);
