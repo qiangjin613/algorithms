@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/longest-common-prefix/">14. 最长公共前缀</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_14 {
 

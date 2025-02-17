@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/palindrome-number/description/">9. 回文数</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_9 {
 

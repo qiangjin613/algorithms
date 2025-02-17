@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * <a href = "https://leetcode.cn/problems/longest-substring-without-repeating-characters/">3. 无重复字符的最长子串</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_3 {
 

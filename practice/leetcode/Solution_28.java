@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/description/">28. 找出字符串中第一个匹配项的下标</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_28 {
 

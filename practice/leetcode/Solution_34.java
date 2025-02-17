@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * <a href = "https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/">34. 在排序数组中查找元素的第一个和最后一个位置</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_34 {
 

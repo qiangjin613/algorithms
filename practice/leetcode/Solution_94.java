@@ -5,6 +5,9 @@ import leetcode.structure.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
+ */
 public class Solution_94 {
 
     public List<Integer> inorderTraversal(TreeNode root) {

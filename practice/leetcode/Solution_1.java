@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 /**
  * <a href="https://leetcode.cn/problems/two-sum/">1. 两数之和</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_1 {
 

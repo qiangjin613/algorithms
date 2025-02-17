@@ -4,6 +4,8 @@ import leetcode.structure.ListNode;
 
 /**
  * <a href = "https://leetcode.cn/problems/reverse-nodes-in-k-group/">25. K 个一组翻转链表</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_25 {
     public static void main(String[] args) {

@@ -6,6 +6,8 @@ import java.util.Arrays;
 
 /**
  * <a href = "https://leetcode.cn/problems/partition-list/">86. 分隔链表</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_86 {
     public static void main(String[] args) {

@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href = "https://leetcode.cn/problems/longest-palindromic-substring/description/">5. 最长回文子串</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_5 {
 

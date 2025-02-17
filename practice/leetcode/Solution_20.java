@@ -5,6 +5,8 @@ import java.util.Deque;
 
 /**
  * <a href="https://leetcode.cn/problems/valid-parentheses/description/">20. 有效的括号</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_20 {
 

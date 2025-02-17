@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/search-insert-position/">35. 搜索插入位置</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_35 {
 

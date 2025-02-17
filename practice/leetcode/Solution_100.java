@@ -2,6 +2,9 @@ package leetcode;
 
 import leetcode.structure.TreeNode;
 
+/**
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
+ */
 public class Solution_100 {
 
     public boolean isSameTree(TreeNode p, TreeNode q) {

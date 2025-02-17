@@ -4,6 +4,8 @@ import leetcode.structure.ListNode;
 
 /**
  * <a href = "https://leetcode.cn/problems/remove-duplicates-from-sorted-list/description/">83. 删除排序链表中的重复元素</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_83 {
 

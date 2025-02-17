@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/add-binary/description/">67. 二进制求和</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_67 {
 

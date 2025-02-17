@@ -4,6 +4,8 @@ import leetcode.structure.ListNode;
 
 /**
  * <a href = "https://leetcode.cn/problems/remove-nth-node-from-end-of-list/">19. 删除链表的倒数第 N 个结点</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_19 {
 

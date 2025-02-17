@@ -4,6 +4,8 @@ import leetcode.structure.TreeNode;
 
 /**
  * <a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/">104. 二叉树的最大深度</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_104 {
 

@@ -6,6 +6,8 @@ import java.util.PriorityQueue;
 
 /**
  * <a href = "https://leetcode.cn/problems/merge-k-sorted-lists/">23. 合并 K 个升序链表</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_23 {
     public static void main(String[] args) {

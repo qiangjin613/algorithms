@@ -3,7 +3,9 @@ package leetcode;
 import leetcode.structure.ListNode;
 
 /**
-<a href = "https://leetcode.cn/problems/merge-two-sorted-lists/">21. 合并两个有序链表</a>
+ * <a href = "https://leetcode.cn/problems/merge-two-sorted-lists/">21. 合并两个有序链表</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_21 {
 

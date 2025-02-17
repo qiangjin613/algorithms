@@ -4,6 +4,8 @@ import leetcode.structure.ListNode;
 
 /**
  * <a href = "https://leetcode.cn/problems/reverse-linked-list-ii/">92. 反转链表 II</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_92 {
     public static void main(String[] args) {

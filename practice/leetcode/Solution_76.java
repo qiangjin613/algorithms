@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * <a href = "https://leetcode.cn/problems/minimum-window-substring/">76. 最小覆盖子串</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_76 {
 
