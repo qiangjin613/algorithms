@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href = "https://leetcode.cn/problems/range-sum-query-2d-immutable/">304. 二维区域和检索 - 矩阵不可变</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_304 {
 
