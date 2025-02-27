@@ -2,6 +2,8 @@ package leetcode;
 
 /**
  * <a href = "https://leetcode.cn/problems/reverse-string/description/">344. 反转字符串</a>
+ *
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
  */
 public class Solution_344 {
     public void reverseString(char[] s) {

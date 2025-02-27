@@ -2,6 +2,9 @@ package leetcode;
 
 import java.util.*;
 
+/**
+ * @author <a href="mailto:qiangjin613@163.com">qiangjin</a>
+ */
 public class Solution_349 {
 
     /**
