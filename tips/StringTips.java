@@ -31,6 +31,19 @@ public class StringTips {
             }
         }
         return ans;
+
+        /*
+        还有一种思路是：
+        for (int i = 0; i < len; ) {
+            // 寻找单词的末尾
+            int j = i;
+            while (j < n && s.charAt(j) != ' ') j++;
+            // 将单词处理、添加
+            sb.append(s.substring(i + 1, j))
+            // 补上空格
+            if (i < n) sb.append(" ");
+        }
+         */
     }
 
     public static void main(String[] args) {
