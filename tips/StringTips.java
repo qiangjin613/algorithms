@@ -1,7 +1,9 @@
 import leetcode.Solution_819;
 import leetcode.Solution_821;
+import leetcode.Solution_830;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -16,7 +18,7 @@ import java.util.List;
 public class StringTips {
 
     /**
-     * 从字符串中寻找出单词
+     * 使用辅助变量寻找、分割单词
      */
     public static List<String> splitString(String str) {
         List<String> ans = new ArrayList<>();
@@ -31,19 +33,28 @@ public class StringTips {
             }
         }
         return ans;
+    }
 
-        /*
-        还有一种思路是：
-        for (int i = 0; i < len; ) {
-            // 寻找单词的末尾
-            int j = i;
-            while (j < n && s.charAt(j) != ' ') j++;
-            // 将单词处理、添加
-            sb.append(s.substring(i + 1, j))
-            // 补上空格
-            if (i < n) sb.append(" ");
+    /**
+     * 另外一种处理思路是 for - while：寻找单词的起始、终止下标
+     *
+     * @see Solution_830 830. 较大分组的位置
+     */
+    public static List<List<Integer>> splitString2(String s) {
+        List<List<Integer>> ans = new ArrayList<>();
+        // 虽说是使用了两层循环，实际看 i 的变动规则，实际上是 O(n)，只循环一次
+        for (int i = 0; i < s.length();) {
+            char charI = s.charAt(i);
+            int j = i + 1;
+            while (j < s.length() && s.charAt(j) == charI) {
+                j++;
+            }
+            if (j - i >= 3) {
+                ans.add(new ArrayList<>(Arrays.asList(i, j - 1)));
+            }
+            i = j;
         }
-         */
+        return ans;
     }
 
     public static void main(String[] args) {
